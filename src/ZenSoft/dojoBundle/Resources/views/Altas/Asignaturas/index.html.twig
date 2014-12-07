@@ -1,0 +1,51 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Altas\Asignaturas list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Idusuariosalta</th>
+                <th>Fechadealta</th>
+                <th>Codigo</th>
+                <th>Idareas</th>
+                <th>Idniveles</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('abm_asignaturas_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.nombre }}</td>
+                <td>{{ entity.idUsuariosAlta }}</td>
+                <td>{% if entity.fechadealta %}{{ entity.fechadealta|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.codigo }}</td>
+                <td>{{ entity.idAreas }}</td>
+                <td>{{ entity.idNiveles }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('abm_asignaturas_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('abm_asignaturas_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('abm_asignaturas_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

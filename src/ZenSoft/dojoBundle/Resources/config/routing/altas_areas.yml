@@ -1,0 +1,30 @@
+abm_areas:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Areas:index" }
+
+abm_areas_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Areas:show" }
+
+abm_areas_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Areas:new" }
+
+abm_areas_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Areas:create" }
+    requirements: { _method: post }
+
+abm_areas_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Areas:edit" }
+
+abm_areas_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Areas:update" }
+    requirements: { _method: post|put }
+
+abm_areas_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Areas:delete" }
+    requirements: { _method: post|delete }

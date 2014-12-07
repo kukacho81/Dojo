@@ -1,0 +1,30 @@
+altas_tiposdocumento:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\TiposDocumento:index" }
+
+altas_tiposdocumento_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\TiposDocumento:show" }
+
+altas_tiposdocumento_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\TiposDocumento:new" }
+
+altas_tiposdocumento_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\TiposDocumento:create" }
+    requirements: { _method: post }
+
+altas_tiposdocumento_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\TiposDocumento:edit" }
+
+altas_tiposdocumento_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\TiposDocumento:update" }
+    requirements: { _method: post|put }
+
+altas_tiposdocumento_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\TiposDocumento:delete" }
+    requirements: { _method: post|delete }

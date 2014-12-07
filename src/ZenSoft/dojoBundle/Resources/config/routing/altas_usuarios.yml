@@ -1,0 +1,30 @@
+abm_usuarios:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Usuarios:index" }
+
+abm_usuarios_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Usuarios:show" }
+
+abm_usuarios_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Usuarios:new" }
+
+abm_usuarios_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Usuarios:create" }
+    requirements: { _method: post }
+
+abm_usuarios_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Usuarios:edit" }
+
+abm_usuarios_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Usuarios:update" }
+    requirements: { _method: post|put }
+
+abm_usuarios_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Usuarios:delete" }
+    requirements: { _method: post|delete }

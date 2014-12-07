@@ -1,0 +1,52 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Altas\Asignaturas</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ entity.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Idusuariosalta</th>
+                <td>{{ entity.idUsuariosAlta }}</td>
+            </tr>
+            <tr>
+                <th>Fechadealta</th>
+                <td>{{ entity.fechadealta|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Codigo</th>
+                <td>{{ entity.codigo }}</td>
+            </tr>
+            <tr>
+                <th>Idareas</th>
+                <td>{{ entity.idAreas }}</td>
+            </tr>
+            <tr>
+                <th>Idniveles</th>
+                <td>{{ entity.idNiveles }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('abm_asignaturas') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('abm_asignaturas_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends "ZenSoftdojoBundle::layout.html.twig" %}
+
+{% block mensajes %}
+<li class="message-preview">
+    <a href="#">
+        <div class="media">
+            <span class="pull-left">
+                <img class="media-object" src="http://placehold.it/50x50" alt="">
+            </span>
+            <div class="media-body">
+                <h5 class="media-heading"><strong>John Smith</strong>
+                </h5>
+                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+            </div>
+        </div>
+    </a>
+</li>
+<li class="message-preview">
+    <a href="#">
+        <div class="media">
+            <span class="pull-left">
+                <img class="media-object" src="http://placehold.it/50x50" alt="">
+            </span>
+            <div class="media-body">
+                <h5 class="media-heading"><strong>John Smith</strong>
+                </h5>
+                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+            </div>
+        </div>
+    </a>
+</li>
+<li class="message-preview">
+    <a href="#">
+        <div class="media">
+            <span class="pull-left">
+                <img class="media-object" src="http://placehold.it/50x50" alt="">
+            </span>
+            <div class="media-body">
+                <h5 class="media-heading"><strong>John Smith</strong>
+                </h5>
+                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+            </div>
+        </div>
+    </a>
+</li>
+{% endblock %}
+
+{% block alertas %}
+{% endblock %}
+
+{% block usuario %}
+    {{ usuario }}
+{% endblock %}
+
+{% block menulateral %}
+<li>
+    <a href="forms.html"><i class="fa fa-fw fa-university"></i> Establecimiento</a>
+</li>
+<li>
+    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-suitcase"></i> Asignaturas <i class="fa fa-fw fa-caret-down"></i></a>
+    <ul id="demo" class="collapse">
+        {% for asignatura in asignaturas %}
+        <li>
+            <a href="#"><i class="fa fa-fw fa-bookmark"></i> {{ asignatura.nombre }}</a>
+        </li>		
+        {% endfor %}
+    </ul>
+</li>
+<li>
+    <a href="charts.html"><i class="fa fa-fw fa-calendar"></i> Calendario</a>
+</li>
+<li>
+    <a href="tables.html"><i class="fa fa-fw fa-folder-open"></i> Contenido</a>
+</li>
+<li>
+    <a href="bootstrap-elements.html"><i class="fa fa-fw fa-envelope"></i> Mensajes</a>
+</li>    
+{% endblock %}
+
+{% block indice %}
+{% endblock %}
+
+{% block contenido %}
+{% endblock %}

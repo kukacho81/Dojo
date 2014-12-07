@@ -1,0 +1,44 @@
+zen_softdojo_homepage:
+    pattern:  /
+    defaults: { _controller: ZenSoftdojoBundle:Docentes:index }
+
+ZenSoftdojoBundle_altas_tiposdocumento:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_tiposdocumento.yml"
+        prefix:   /abm/tiposdocumento
+
+ZenSoftdojoBundle_abm_usuarios:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_usuarios.yml"
+        prefix:   /abm/usuarios
+        
+ZenSoftdojoBundle_abm_paises:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_paises.yml"
+        prefix:   /abm/paises      
+        
+ZenSoftdojoBundle_abm_provincias:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_provincias.yml"
+        prefix:   /abm/provincias
+        
+ZenSoftdojoBundle_abm_localidades:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_localidades.yml"
+        prefix:   /abm/localidades
+        
+ZenSoftdojoBundle_abm_niveles:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_niveles.yml"
+        prefix:   /abm/niveles
+        
+ZenSoftdojoBundle_abm_areas:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_areas.yml"
+        prefix:   /abm/areas
+        
+ZenSoftdojoBundle_abm_asignaturas:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_asignaturas.yml"
+        prefix:   /abm/asignaturas
+
+              
+ZenSoftdojoBundle_abm_establecimientos:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_establecimientos.yml"
+        prefix:   /abm/establecimientos
+ 
+ZenSoftdojoBundle_abm_modulos:
+        resource: "@ZenSoftdojoBundle/Resources/config/routing/altas_modulos.yml"
+        prefix:   /abm/modulos        

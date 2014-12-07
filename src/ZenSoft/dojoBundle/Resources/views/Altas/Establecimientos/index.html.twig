@@ -1,0 +1,53 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Altas\Establecimientos list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Calle</th>
+                <th>Altura</th>
+                <th>Web</th>
+                <th>Idlocalidades</th>
+                <th>Logo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('abm_establecimientos_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.nombre }}</td>
+                <td>{{ entity.telefono }}</td>
+                <td>{{ entity.calle }}</td>
+                <td>{{ entity.altura }}</td>
+                <td>{{ entity.web }}</td>
+                <td>{{ entity.idLocalidades }}</td>
+                <td>{{ entity.logo }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('abm_establecimientos_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('abm_establecimientos_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('abm_establecimientos_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

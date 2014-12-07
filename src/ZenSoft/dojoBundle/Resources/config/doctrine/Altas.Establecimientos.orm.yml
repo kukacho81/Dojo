@@ -1,0 +1,31 @@
+ZenSoft\dojoBundle\Entity\Altas\Establecimientos:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        telefono:
+            type: string
+            length: 255
+        calle:
+            type: string
+            length: '150'
+        altura:
+            type: integer
+        web:
+            type: string
+            length: 255
+        idLocalidades:
+            type: integer
+            column: id_localidades
+        logo:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

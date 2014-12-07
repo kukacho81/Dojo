@@ -1,0 +1,30 @@
+abm_paises:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Paises:index" }
+
+abm_paises_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Paises:show" }
+
+abm_paises_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Paises:new" }
+
+abm_paises_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Paises:create" }
+    requirements: { _method: post }
+
+abm_paises_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Paises:edit" }
+
+abm_paises_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Paises:update" }
+    requirements: { _method: post|put }
+
+abm_paises_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Paises:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,28 @@
+ZenSoft\dojoBundle\Entity\Altas\Asignaturas:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '150'
+        idUsuariosAlta:
+            type: integer
+            column: id_usuarios_alta
+        fechadealta:
+            type: datetime
+        codigo:
+            type: string
+            length: '30'
+        idAreas:
+            type: integer
+            column: id_areas
+        idNiveles:
+            type: integer
+            column: id_niveles
+    lifecycleCallbacks: {  }

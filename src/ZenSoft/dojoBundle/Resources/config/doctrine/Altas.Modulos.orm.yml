@@ -1,0 +1,20 @@
+ZenSoft\dojoBundle\Entity\Altas\Modulos:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '50'
+        detalle:
+            type: string
+            length: 255
+        idAsignaturas:
+            type: integer
+            column: id_asignaturas
+    lifecycleCallbacks: {  }

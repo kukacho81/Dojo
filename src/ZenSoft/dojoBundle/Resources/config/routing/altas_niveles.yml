@@ -1,0 +1,30 @@
+abm_niveles:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Niveles:index" }
+
+abm_niveles_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Niveles:show" }
+
+abm_niveles_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Niveles:new" }
+
+abm_niveles_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Niveles:create" }
+    requirements: { _method: post }
+
+abm_niveles_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Niveles:edit" }
+
+abm_niveles_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Niveles:update" }
+    requirements: { _method: post|put }
+
+abm_niveles_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Niveles:delete" }
+    requirements: { _method: post|delete }

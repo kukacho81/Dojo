@@ -1,0 +1,30 @@
+abm_provincias:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Provincias:index" }
+
+abm_provincias_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Provincias:show" }
+
+abm_provincias_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Provincias:new" }
+
+abm_provincias_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Provincias:create" }
+    requirements: { _method: post }
+
+abm_provincias_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Provincias:edit" }
+
+abm_provincias_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Provincias:update" }
+    requirements: { _method: post|put }
+
+abm_provincias_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Provincias:delete" }
+    requirements: { _method: post|delete }

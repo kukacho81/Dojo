@@ -1,0 +1,30 @@
+abm_modulos:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Modulos:index" }
+
+abm_modulos_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Modulos:show" }
+
+abm_modulos_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Modulos:new" }
+
+abm_modulos_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Modulos:create" }
+    requirements: { _method: post }
+
+abm_modulos_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Modulos:edit" }
+
+abm_modulos_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Modulos:update" }
+    requirements: { _method: post|put }
+
+abm_modulos_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Modulos:delete" }
+    requirements: { _method: post|delete }

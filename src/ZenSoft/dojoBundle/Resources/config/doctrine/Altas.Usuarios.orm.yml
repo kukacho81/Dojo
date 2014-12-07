@@ -1,0 +1,29 @@
+ZenSoft\dojoBundle\Entity\Altas\Usuarios:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: '38'
+        email:
+            type: string
+            length: 255
+        idTiposdocumento:
+            type: integer
+            column: id_tiposdocumento
+        documento:
+            type: string
+            length: '50'
+        imagen:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

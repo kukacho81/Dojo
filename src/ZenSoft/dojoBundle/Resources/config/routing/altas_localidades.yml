@@ -1,0 +1,30 @@
+abm_localidades:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Localidades:index" }
+
+abm_localidades_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Localidades:show" }
+
+abm_localidades_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Localidades:new" }
+
+abm_localidades_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Localidades:create" }
+    requirements: { _method: post }
+
+abm_localidades_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Localidades:edit" }
+
+abm_localidades_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Localidades:update" }
+    requirements: { _method: post|put }
+
+abm_localidades_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Localidades:delete" }
+    requirements: { _method: post|delete }

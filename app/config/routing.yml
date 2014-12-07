@@ -1,0 +1,4 @@
+zen_softdojo:
+    resource: "@ZenSoftdojoBundle/Resources/config/routing.yml"
+    prefix:   /
+

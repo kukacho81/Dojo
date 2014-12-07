@@ -1,0 +1,30 @@
+abm_establecimientos:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Establecimientos:index" }
+
+abm_establecimientos_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Establecimientos:show" }
+
+abm_establecimientos_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Establecimientos:new" }
+
+abm_establecimientos_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Establecimientos:create" }
+    requirements: { _method: post }
+
+abm_establecimientos_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Establecimientos:edit" }
+
+abm_establecimientos_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Establecimientos:update" }
+    requirements: { _method: post|put }
+
+abm_establecimientos_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Establecimientos:delete" }
+    requirements: { _method: post|delete }

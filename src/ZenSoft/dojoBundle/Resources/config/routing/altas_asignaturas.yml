@@ -1,0 +1,30 @@
+abm_asignaturas:
+    pattern:  /
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Asignaturas:index" }
+
+abm_asignaturas_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Asignaturas:show" }
+
+abm_asignaturas_new:
+    pattern:  /new
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Asignaturas:new" }
+
+abm_asignaturas_create:
+    pattern:  /create
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Asignaturas:create" }
+    requirements: { _method: post }
+
+abm_asignaturas_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Asignaturas:edit" }
+
+abm_asignaturas_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Asignaturas:update" }
+    requirements: { _method: post|put }
+
+abm_asignaturas_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ZenSoftdojoBundle:Altas\Asignaturas:delete" }
+    requirements: { _method: post|delete }
